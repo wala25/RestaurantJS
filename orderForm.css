@@ -1,0 +1,16 @@
+.formContainer{position: absolute;background: rgba(210, 105, 30, 0.6);
+        width: 100vw;min-width: 450px;
+        height: 100%;min-height:450px;top: 0px;
+    z-index: 1000; display: none;}
+    .formContainer input{border-radius:15px;padding: 5px; border: unset;}
+   .orderForm{position:relative;width: 430px;background: rgb(201, 83, 15);margin:0px auto;
+    border-radius:20px ;color: white;
+    top:max(calc((100vh - 277px)/2),86.5px);}
+    .formContainer table{position: relative;margin: auto;height: 250px;width: 100%;text-align: center;}
+   .validate{position: relative;margin:7px;width: max-content;background-color: rgb(192, 36, 16);
+    border: rgb(112, 98, 17) outset 3px; cursor: pointer;padding: 5px;
+    border-radius: 15px;color:white; font-weight: 700;}
+   .formContainer button:hover{background:rgb(211, 106, 8) ;}
+   .btnContainer{width: max-content;margin: auto;}
+   .x{position: relative;float: right;color: white; font-weight: 600;right: 15px;top: 5px;margin: 0px 0px;cursor: pointer;}
+   .x:hover{color: rgb(230, 204, 91);}

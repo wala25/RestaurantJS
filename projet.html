@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>restaurant</title>
+    <link href='projet.css' rel="stylesheet">
+    <link href='menucss.css' rel="stylesheet">
+    <link href="orderForm.css" rel="stylesheet">
+</head>
+<body>
+  <section class="menu">
+    <div class="pos" >
+      <p class="panier"  onclick="dispBasket()" id="pos">Panier</p>
+      <div class="basketContainer" id="panier"></div>  
+    </div>
+  </section>
+
+
+  <section class="elemnts" id="elemnts">
+  </section>
+
+
+<!--Formulaire ajout d'un produit-->
+  <div  class="formContainer" id="AddNewItemForm">
+    <form class="orderForm" name="addProduct">
+        <p  class="x" onclick="hideNewItemForm()">X</p>
+        <table>
+            <tr>
+                <td>
+                    Produit:
+                </td>
+                <td><input type="text" id="product">  </td>
+            </tr>
+            <tr>
+                <td>Prix:</td>
+                <td><input type="number" id="price"> </td>
+            </tr>
+            <tr>
+                <td>UrlImage:</td>
+                <td><input type="text" id="imgUrl"></td>
+            </tr>
+        </table>
+     <div class="btnContainer"> <button class="validate" onclick="addNewItem()" type="button">Valider</button> </div>
+    </form>
+</div>
+
+<!--Formulaire livraison-->
+<div  class="formContainer" id="orderForm">
+      <form class="orderForm" >
+          <p  class="x" onclick="hideFormOrder()">X</p>
+          <table>
+              <tr>
+                  <td>
+                      Nom et Prénom:
+                  </td>
+                  <td><input type="text" id="name">  </td>
+              </tr>
+              <tr>
+                  <td>Date de naissance:</td>
+                  <td><input type="date"></td>
+              </tr>
+              <tr>
+                  <td>Adress:</td>
+                  <td><input type="text" id="adress"> </td>
+              </tr>
+              <tr>
+                  <td>Code Zip:</td>
+                  <td><input type="text" id="zip"></td>
+              </tr>
+          </table>
+       <div class="btnContainer"> <button class="validate" type="button" onclick="confirmOrder()">Valider</button> </div>
+      </form>
+  </div>
+
+
+
+  <script src='projet.js' type="text/javascript"></script> 
+</body>
+</html>

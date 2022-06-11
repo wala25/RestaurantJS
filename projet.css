@@ -1,0 +1,54 @@
+body{position: relative;width: 100vw;height: 100vh;
+    margin: 0px;overflow: overlay;
+    background: rgba(173, 99, 50, 0.26);min-width: 450px;}
+
+.elemnts{display: grid; grid-template-columns: auto auto auto auto auto auto; gap:10px 25px;
+    justify-content: space-between;width: max-content;margin: auto;}
+
+
+.card{position: relative;top: 50px;
+     display: grid;
+    grid-template-columns: auto auto auto ;gap:0px ;
+    width: 150px;height:220px;
+    background: rgb(255, 94, 1);
+    border-radius:15px ;
+    margin: 20px 10px;
+    word-break: break-all;overflow: hidden;}
+
+.img,.add, .img0{position: relative;grid-column:1/4;width: 90%;height: 120px;
+    border-radius: 15px;
+    margin: auto;}
+.img0, .add{width: 100%;position: absolute;}
+.add{ background: rgba(223, 231, 231, 0.658);
+    background-image:url("./images/add-circle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+     cursor: pointer;
+     display: none;}
+.name,.price{grid-column:1/4;width: max-content;height: max-content;margin: auto;}
+
+.nbreOfItems {grid-column:1/4;display: grid; grid-template-columns: auto auto auto ;
+    width: 80%;margin: auto;}
+.nbreOfItems div{display: inline;margin: 0px auto;text-align: center;}
+p{margin:0px 0px;}
+
+.commander{width: max-content;background-color: rgb(192, 36, 16);
+    border: rgb(112, 98, 17) outset 3px; cursor: pointer;
+    border-radius: 15px;color:white; font-weight: 700;margin: 7px;}
+.B1,.B0{width:30px; background-color: rgb(192, 36, 16);
+    border: rgb(112, 98, 17) outset 3px; cursor: pointer;
+    border-radius: 50%;color:white; font-weight: 700;}
+button:hover{background:rgb(211, 106, 8) ;}
+
+
+
+@media screen and (max-width: 1160px){
+    .elemnts{ grid-template-columns: auto auto auto auto; gap:10px 20px;}
+}
+
+@media screen and (max-width: 760px){
+    .elemnts{grid-template-columns: auto auto; gap:10px 15px;}
+}
+
+
+
